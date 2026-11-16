@@ -1,0 +1,8 @@
+# Levanta el backend de la práctica:  docker compose up --build
+services:
+  backend:
+    build: ./backend
+    ports:
+      # puerto-del-computador:puerto-del-contenedor
+      # La app Flutter se conecta al puerto 8080 del computador.
+      - "8080:8080"
